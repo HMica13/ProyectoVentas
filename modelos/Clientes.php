@@ -28,7 +28,7 @@ class CLientes {
     }
 
     public function mostrar($idcliente) {
-        $sql = "SELECT * FROM rclientes WHERE idrol='$idcliente'";
+        $sql = "SELECT * FROM clientes WHERE idrol='$idcliente'";
         return ejecutarConsultaSimpleFila($sql);
     }
 
@@ -38,7 +38,7 @@ class CLientes {
     }
 
     public function select() {
-        $sql = "SELECT * FROM rclientes WHERE condicion=1";
+        $sql = "SELECT * FROM clientes WHERE condicion=1";
         return ejecutarConsulta($sql);
     }
 }
