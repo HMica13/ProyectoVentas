@@ -23,7 +23,7 @@ if(!function_exists('ejecutarConsulta')){
         //Creo una variable para almacenar el resultado de la consulta
         $query = $conexion->query($sql);
         //Retorno el resultado de la consulta
-        return $query
+        return $query;
 
     }
 
